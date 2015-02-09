@@ -4,7 +4,30 @@
     <title>016</title>
   </head>
   <body>
+    <div id="beer-menu">
+      <ul>
+      </ul>
+    </div>
 
+    <div id="beer-menu-2">
+      <ul>
+      </ul>
+    </div>
+
+  <script id="beer-template" type="text/x-handlebars-template">
+    {{#each brewers }}
+      {{name}} : {{location}}
+      <ul>
+      {{#each beer}}
+        <li>{{name}}
+      {{/each}}
+      </ul>
+    {{/each }}
+  </script>
+
+  <script src="handlebars-v2.0.0.js"></script>
+  <script src="handlebars.runtime-v2.0.0.js"></script>
+  <script src="template.js"></script>
   <script src="main.js"></script>
   </body>
 </html>
