@@ -1,0 +1,8 @@
+{{#each brewers }}
+  <li>{{ name }}</li>
+  <ul>
+    {{#each beer }}
+    <li>{{ name }} : ${{ price }}</li>
+    {{/each }}
+  </ul>
+{{/each }}
